@@ -1,0 +1,129 @@
+/* ELEMENTS */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: crosshair;
+  background-color: #000;
+  color: #ddd;
+}
+
+h1 {
+  margin: .5rem 0;
+  font-size: 30px;
+}
+
+h2 {
+  margin: .5rem 0;
+  font-size: 24px;
+}
+
+h3 {
+  margin: .25rem 0;
+  font-size: 20px;
+}
+
+
+/* GENERIC CLASSES */
+
+.highlight {
+  color: yellow;
+}
+
+.center {
+  text-align: center;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.text {
+  font-size: 16px;
+}
+
+
+/* SPECIFIC CLASSES AND IDS */
+
+#wrap {
+  display: inline-block;
+  border: 1px solid black;
+  user-select: none;
+}
+
+#right {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 250px;
+}
+
+#right > div {
+  font-size: 26px;
+}
+
+#money {
+  color: yellow;
+}
+
+#shop {
+  font-size: 20px;
+}
+
+
+/* MENU STUFF */
+#menu {
+  position: absolute;
+  width: 1400px;
+  height: 700px;
+  left: 100px;
+  top: 100px;
+  background: rgba(32, 32, 32, 0.85);
+  
+  color: #ddd;
+  font-family: 'Segoe UI';
+  cursor: default;
+}
+
+#menu-flex-wrap {
+  display: flex;
+}
+
+#menu-left {
+  flex-grow: 1;
+  width: 30%;
+}
+
+#menu-specials {
+  flex-grow: 2;
+  width: 60%;
+}
+
+#menu .col {
+  border: 1px solid white;
+  padding: .5rem;
+}
+
+.menu-specials-block {
+  padding-bottom: .5rem;
+}
+
+.menu-specials-choice {
+  display: inline-block;
+  width: 200px;
+  border: 1px solid aqua;
+  color: aqua;
+  font-family: 'Segoe UI';
+  padding: .1rem 0;
+
+  cursor: pointer;
+}
+
+.menu-specials-chosen {
+  border-color: lime;
+  color: lime;
+}
+
+.menu-specials-abandoned {
+  border-color: gray;
+  color: gray;
+}

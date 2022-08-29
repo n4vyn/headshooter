@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeadShooter</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="./index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div id="wrap">      
+      <canvas id="canvas" width="1600px" height="900px"></canvas>
+      <div id="menu" style="display: none">
+        <h1 class="center">Menu or sumtin!</h1>
+        <div id="menu-flex-wrap">
+          <div class="col center" id="menu-left">
+          </div>
+          <div class="col center" id="menu-specials">
+          </div>
+        </div>
+        <div id="special-tooltip" class="center">
+        </div>
+      </div>
+    </div>
+    <div id="right">
+      <div id="money"></div>
+      <div>1: <span id="damage"></span></div>
+      <div>2: <span id="attackSpeed"></span></div>
+      <div>3: <span id="pellets"></span></div>
+      <div>4: <span id="multiShot"></span></div>
+      <div>5: <span id="projectileSpeed"></span></div>
+      
+      <div></div>
+
+      todo: <br> 
+      <ul>
+        <li>better code & optimalizations</li>
+        <li>better ui - like where to display prices (hard, I suck at design)</li>
+        <li>fix weird background moving (stutters and bad moving while freeze)</li>
+        <li>improving hitboxes (textures are not perfect rectangles now so corners are off, very annoying for dashing)</li>
+        <li>enemy collisions maybe.. a lot can be done with enemies, adding more enemy types specially</li>
+        <li>solve just running down and enemies being way up out of view (you can just run from those forever)</li>
+        <li>
+          balancing the numbers: damage, spawn rates, money, prices, getting harder with more kills but balanced..
+          (very hard or more like tedious, much trial end error, don't even want to do it since nobody will play this lol)
+        </li>
+      </ul>
+    </div>
+    <button id="stopButton">stop</button>
+    <div id="shop" >
+      <span class="highlight">1</span>: +AD |
+      <span class="highlight">2</span>: +AS |
+      <span class="highlight">3</span>: +pellet |
+      <span class="highlight">4</span>: +multishot |
+      <span class="highlight">5</span>: +projectile speed |
+      <span class="highlight">SHIFT/Q</span>: <span id="Q">unlocked later</span> |
+      <span class="highlight">CTRL/E</span>: ulti - freeze all |
+      <span class="highlight">SPACE</span>: dash |
+      <span class="highlight">TAB</span>: MENU & PAUSE
+      | <span class="highlight">M</span>: instantly progress further (for testing specials)
+    </div>
+  </body>
+</html>

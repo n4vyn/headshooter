@@ -1,0 +1,14 @@
+{
+  "name": "headshooter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src & live-server --entry-file=index.html"
+  },
+  "author": "n4vyn",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.1.0"
+  }
+}
